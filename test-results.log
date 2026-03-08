@@ -1,0 +1,129 @@
+  console.log
+    Order summary: {
+      itemCount: 12,
+      lineItemCount: 3,
+      status: 'draft',
+      isRush: false,
+      hasCoupon: false,
+      subtotal: 167.45,
+      volumeDiscount: 8.37,
+      couponDiscount: 0,
+      tax: 13.28,
+      rushSurcharge: 0,
+      total: 172.35
+    }
+
+      at Object.log (order-processor.js:201:9)
+
+  console.log
+    After coupon: {
+      subtotal: 167.45,
+      volumeDiscount: 8.37,
+      couponDiscount: 5,
+      tax: 13.28,
+      rushSurcharge: 0,
+      total: 167.35
+    }
+
+      at Object.log (order-processor.js:205:9)
+
+  console.log
+    Rush order: {
+      subtotal: 167.45,
+      volumeDiscount: 8.37,
+      couponDiscount: 5,
+      tax: 13.28,
+      rushSurcharge: 15,
+      total: 182.35
+    }
+
+      at Object.log (order-processor.js:209:9)
+
+  console.log
+    Status: submitted
+
+      at Object.log (order-processor.js:213:9)
+
+PASS ./order-processor.test.js
+  OrderProcessor
+    Constructor
+      ✓ should initialize with default values (10 ms)
+    addLineItem
+      ✓ should add a single line item to the order (4 ms)
+      ✓ should add multiple line items to the order (1 ms)
+      ✓ should default taxRate to 0 if not provided (3 ms)
+    removeLineItem
+      ✓ should remove a line item by SKU (3 ms)
+      ✓ should do nothing if SKU does not exist
+      ✓ should remove all items with the same SKU (1 ms)
+    updateQuantity
+      ✓ should update quantity for existing item (1 ms)
+      ✓ should do nothing if SKU does not exist (2 ms)
+      ✓ should allow updating quantity to zero (1 ms)
+      ✓ should allow updating quantity to negative numbers
+    applyCoupon
+      ✓ should apply a coupon to the order (3 ms)
+      ✓ should overwrite existing coupon (1 ms)
+    removeCoupon
+      ✓ should remove the applied coupon (1 ms)
+      ✓ should not fail if no coupon is applied (5 ms)
+    setRush
+      ✓ should mark order as rush (1 ms)
+      ✓ should mark order as non-rush (1 ms)
+    getTotalItemCount
+      ✓ should return 0 for empty order
+      ✓ should return total quantity across all line items
+      ✓ should handle single item
+      ✓ should handle large quantities
+    getVolumeDiscountPercent
+      ✓ should return 0% for less than 10 items (4 ms)
+      ✓ should return 5% for 10-24 items (2 ms)
+      ✓ should return 10% for 25-49 items
+      ✓ should return 15% for 50-99 items (1 ms)
+      ✓ should return 20% for 100+ items (3 ms)
+      ✓ should calculate volume discount across multiple line items (4 ms)
+    calculateTotal
+      ✓ should calculate subtotal correctly (1 ms)
+      ✓ should calculate tax correctly for single item
+      ✓ should calculate tax on discounted price for volume discount (1 ms)
+      ✓ should apply volume discount percentage correctly (1 ms)
+      ✓ should apply coupon discount after volume discount
+      ✓ should add rush surcharge to final total (8 ms)
+      ✓ should round final total to 2 decimal places (1 ms)
+      ✓ should calculate complex order with multiple items, discount, coupon, and tax (4 ms)
+      ✓ should return 0 discount for empty order (2 ms)
+      ✓ should handle zero quantity items (3 ms)
+      ✓ should apply all discounts and surcharges together (1 ms)
+    advanceStatus
+      ✓ should transition from draft to submitted (3 ms)
+      ✓ should transition from submitted to processing
+      ✓ should transition from processing to shipped
+      ✓ should transition from shipped to delivered
+      ✓ should not transition from delivered (1 ms)
+      ✓ should not transition from cancelled (1 ms)
+      ✓ should follow the full status progression (3 ms)
+    cancel
+      ✓ should cancel order from draft status (1 ms)
+      ✓ should cancel order from submitted status (1 ms)
+      ✓ should not cancel order from processing status (3 ms)
+      ✓ should not cancel order from shipped status (1 ms)
+      ✓ should not cancel order from delivered status
+      ✓ should not cancel order already cancelled (1 ms)
+    getSummary
+      ✓ should return summary for empty order (1 ms)
+      ✓ should return summary with line items (2 ms)
+      ✓ should include coupon flag in summary (1 ms)
+      ✓ should include rush flag in summary
+      ✓ should include current status in summary (4 ms)
+      ✓ should include all financial details in summary (3 ms)
+      ✓ should return complete summary object with all fields (6 ms)
+    Integration Tests
+      ✓ should handle a complete order workflow (1 ms)
+      ✓ should handle order modification workflow (4 ms)
+      ✓ should calculate correctly with multiple volume discount tiers
+
+Test Suites: 1 passed, 1 total
+Tests:       61 passed, 61 total
+Snapshots:   0 total
+Time:        1.302 s
+Ran all test suites matching order-processor.test.js.

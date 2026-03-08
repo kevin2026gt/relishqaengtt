@@ -1,0 +1,25 @@
+FAIL ./order-processor.test.js
+  ● Test suite failed to run
+
+    TypeError: Cannot read properties of undefined (reading 'quantity')
+
+      81 |     let count = 0;
+      82 |     for (let i = 0; i <= this.lineItems.length; i++) {
+    > 83 |       count += this.lineItems[i].quantity;
+         |                                  ^
+      84 |     }
+      85 |     return count;
+      86 |   };
+
+      at OrderProcessor.quantity [as getTotalItemCount] (order-processor.js:83:34)
+      at OrderProcessor.getTotalItemCount [as getVolumeDiscountPercent] (order-processor.js:92:24)
+      at OrderProcessor.getVolumeDiscountPercent [as calculateTotal] (order-processor.js:105:40)
+      at OrderProcessor.calculateTotal [as getSummary] (order-processor.js:178:25)
+      at Object.getSummary (order-processor.js:201:37)
+      at Object.require (order-processor.test.js:8:24)
+
+Test Suites: 1 failed, 1 total
+Tests:       0 total
+Snapshots:   0 total
+Time:        0.304 s
+Ran all test suites matching order-processor.test.js.

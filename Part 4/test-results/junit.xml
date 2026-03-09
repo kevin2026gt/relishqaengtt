@@ -1,0 +1,457 @@
+<testsuites id="" name="" tests="30" failures="8" skipped="0" errors="0" time="284.909154">
+<testsuite name="ajax.spec.js" timestamp="2026-03-09T05:53:00.852Z" hostname="firefox" tests="5" failures="0" skipped="0" time="93.571" errors="0">
+<testcase name="Scenario A: AJAX Data Load Testing › TC-AJAX-001: Successful AJAX Data Load" classname="ajax.spec.js" time="20.907">
+<system-out>
+<![CDATA[Loading indicator present: false
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario A: AJAX Data Load Testing › TC-AJAX-002: AJAX Data Load with Timeout Verification" classname="ajax.spec.js" time="16.894">
+<system-out>
+<![CDATA[Actual AJAX load time: 15.04 seconds
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario A: AJAX Data Load Testing › TC-AJAX-003: Verify Exact Label Text Content" classname="ajax.spec.js" time="17.668">
+</testcase>
+<testcase name="Scenario A: AJAX Data Load Testing › TC-AJAX-004: Multiple Sequential Requests" classname="ajax.spec.js" time="21.428">
+<system-out>
+<![CDATA[--- Request 1 of 3 ---
+Request 1 completed in 15.01 seconds
+--- Request 2 of 3 ---
+Request 2 completed in 0.09 seconds
+--- Request 3 of 3 ---
+Request 3 completed in 0.00 seconds
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario A: AJAX Data Load Testing › TC-AJAX-005: AJAX Response Text Verification" classname="ajax.spec.js" time="16.674">
+</testcase>
+</testsuite>
+<testsuite name="dynamic-elements.spec.js" timestamp="2026-03-09T05:53:00.852Z" hostname="firefox" tests="13" failures="8" skipped="0" time="60.229" errors="0">
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-001: Dynamic Button ID Changes on Reload" classname="dynamic-elements.spec.js" time="17.032">
+<failure message="dynamic-elements.spec.js:16:3 TC-DYNAMIC-001: Dynamic Button ID Changes on Reload" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:16:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-001: Dynamic Button ID Changes on Reload 
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('button').first() to be visible
+        15 × locator resolved to hidden <button type="button" aria-expanded="false" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">…</button>
+
+
+       at ../pages/DynamicElementsPage.js:61
+
+      59 |     
+      60 |     // Wait for button to be ready (not just present, but interactive)
+    > 61 |     await button.waitFor({ state: 'visible', timeout: 5000 });
+         |                  ^
+      62 |     await button.isEnabled({ timeout: 5000 });
+      63 |     
+      64 |     // Click the button
+        at DynamicElementsPage.clickDynamicButton (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:61:18)
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:40:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Button may not have an ID attribute, but element is still accessible
+
+[[ATTACHMENT|dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-002: Click Dynamic Button Regardless of ID Changes" classname="dynamic-elements.spec.js" time="7.283">
+<failure message="dynamic-elements.spec.js:60:3 TC-DYNAMIC-002: Click Dynamic Button Regardless of ID Changes" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:60:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-002: Click Dynamic Button Regardless of ID Changes 
+
+    TimeoutError: locator.waitFor: Timeout 5000ms exceeded.
+    Call log:
+      - waiting for locator('button').first() to be visible
+        15 × locator resolved to hidden <button type="button" aria-expanded="false" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">…</button>
+
+
+       at ../pages/DynamicElementsPage.js:61
+
+      59 |     
+      60 |     // Wait for button to be ready (not just present, but interactive)
+    > 61 |     await button.waitFor({ state: 'visible', timeout: 5000 });
+         |                  ^
+      62 |     await button.isEnabled({ timeout: 5000 });
+      63 |     
+      64 |     // Click the button
+        at DynamicElementsPage.clickDynamicButton (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:61:18)
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:76:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-003: Multiple Reloads and Clicks" classname="dynamic-elements.spec.js" time="12.217">
+<failure message="dynamic-elements.spec.js:81:3 TC-DYNAMIC-003: Multiple Reloads and Clicks" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:81:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-003: Multiple Reloads and Clicks 
+
+    TimeoutError: locator.waitFor: Timeout 10000ms exceeded.
+    Call log:
+      - waiting for locator('button').first() to be visible
+        25 × locator resolved to hidden <button type="button" aria-expanded="false" class="navbar-toggler" data-toggle="collapse" aria-label="Toggle navigation" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent">…</button>
+
+
+       at ../pages/DynamicElementsPage.js:44
+
+      42 |     
+      43 |     // Wait for button to be visible first
+    > 44 |     await button.waitFor({ state: 'visible', timeout: 10000 });
+         |                  ^
+      45 |     
+      46 |     // Get the ID attribute
+      47 |     const buttonId = await button.getAttribute('id');
+        at DynamicElementsPage.getDynamicButtonId (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:44:18)
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:94:42
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[--- Cycle 1 of 3 ---
+
+[[ATTACHMENT|dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-004: Resilient Selector Without ID Dependency" classname="dynamic-elements.spec.js" time="2.344">
+<failure message="dynamic-elements.spec.js:115:3 TC-DYNAMIC-004: Resilient Selector Without ID Dependency" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:115:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-004: Resilient Selector Without ID Dependency 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: true
+    Received: false
+
+      127 |     // Assert: Button is found and visible
+      128 |     const isVisible = await button.isVisible();
+    > 129 |     expect(isVisible).toBe(true);
+          |                       ^
+      130 |
+      131 |     // Assert: Button has height and width (not just DOM presence)
+      132 |     const boundingBox = await button.boundingBox();
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:129:23
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-005: Name Input Field Location and Content" classname="dynamic-elements.spec.js" time="2.289">
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-006: Enter Text in Overlapped Field" classname="dynamic-elements.spec.js" time="2.249">
+<failure message="dynamic-elements.spec.js:171:3 TC-DYNAMIC-006: Enter Text in Overlapped Field" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:171:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-006: Enter Text in Overlapped Field 
+
+    Error: Failed to enter name. Expected: "John Doe", Got: ""
+
+       at ../pages/DynamicElementsPage.js:146
+
+      144 |     const enteredValue = await nameInput.inputValue();
+      145 |     if (enteredValue !== name) {
+    > 146 |       throw new Error(`Failed to enter name. Expected: "${name}", Got: "${enteredValue}"`);
+          |             ^
+      147 |     }
+      148 |   }
+      149 |
+        at DynamicElementsPage.enterNameInOverlappedField (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:146:13)
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:190:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Field visible before input: true
+
+[[ATTACHMENT|dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-007: Overlapped Element Visibility Check" classname="dynamic-elements.spec.js" time="3.084">
+<system-out>
+<![CDATA[Initial visibility: true
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-008: Forced Click on Hidden/Overlapped Element" classname="dynamic-elements.spec.js" time="1.3">
+<system-out>
+<![CDATA[Force click successfully handled overlapped element
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-009: Clear and Re-enter Name Field Multiple Times" classname="dynamic-elements.spec.js" time="1.346">
+<failure message="dynamic-elements.spec.js:264:3 TC-DYNAMIC-009: Clear and Re-enter Name Field Multiple Times" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:264:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-009: Clear and Re-enter Name Field Multiple Times 
+
+    Error: Failed to enter name. Expected: "Alice", Got: ""
+
+       at ../pages/DynamicElementsPage.js:146
+
+      144 |     const enteredValue = await nameInput.inputValue();
+      145 |     if (enteredValue !== name) {
+    > 146 |       throw new Error(`Failed to enter name. Expected: "${name}", Got: "${enteredValue}"`);
+          |             ^
+      147 |     }
+      148 |   }
+      149 |
+        at DynamicElementsPage.enterNameInOverlappedField (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:146:13)
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:282:7
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-010: Focus and Blur Field Interactions" classname="dynamic-elements.spec.js" time="2.427">
+<failure message="dynamic-elements.spec.js:294:3 TC-DYNAMIC-010: Focus and Blur Field Interactions" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:294:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-010: Focus and Blur Field Interactions 
+
+    Error: expect(received).toBe(expected) // Object.is equality
+
+    Expected: "focused text"
+    Received: ""
+
+      315 |     // Assert: Text was entered while focused
+      316 |     const value = await dynamicPage.getNameInputValue();
+    > 317 |     expect(value).toBe('focused text');
+          |                   ^
+      318 |
+      319 |     // Act: Blur the field
+      320 |     await dynamicPage.blurNameField();
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:317:19
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[Field focused: false
+
+[[ATTACHMENT|dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-011: Accessibility Tree Includes Name Input" classname="dynamic-elements.spec.js" time="2.314">
+<failure message="dynamic-elements.spec.js:333:3 TC-DYNAMIC-011: Accessibility Tree Includes Name Input" type="FAILURE">
+<![CDATA[  [firefox] › dynamic-elements.spec.js:333:3 › Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-011: Accessibility Tree Includes Name Input 
+
+    TypeError: Cannot read properties of undefined (reading 'snapshot')
+
+      339 |
+      340 |     // Act: Get accessibility information
+    > 341 |     const accessibility = await page.accessibility.snapshot();
+          |                                                    ^
+      342 |
+      343 |     // Verify page structure (accessibility tree should include input)
+      344 |     expect(accessibility).toBeTruthy();
+        at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:341:52
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ../test-results/dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/error-context.md
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/test-failed-1.png]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/video.webm]]
+
+[[ATTACHMENT|dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/error-context.md]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-012: Dynamic Page Elements Resilience" classname="dynamic-elements.spec.js" time="5.181">
+<system-out>
+<![CDATA[Initial button count: 2
+After reload 1: 2 buttons
+After reload 2: 2 buttons
+After reload 3: 2 buttons
+Dynamic element resilience verified across multiple reloads
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario C: Dynamic Elements and Overlapped Elements Testing › TC-DYNAMIC-013: Verify Input Type and Attributes" classname="dynamic-elements.spec.js" time="1.163">
+<system-out>
+<![CDATA[Input type: text
+Placeholder: Id
+Input element attributes verified
+]]>
+</system-out>
+</testcase>
+</testsuite>
+<testsuite name="login.spec.js" timestamp="2026-03-09T05:53:00.852Z" hostname="firefox" tests="12" failures="0" skipped="0" time="104.015" errors="0">
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-001: Login with Empty Username" classname="login.spec.js" time="8.727">
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-002: Login with Empty Password" classname="login.spec.js" time="4.347">
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-003: Login with Both Fields Empty" classname="login.spec.js" time="2.258">
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-004: Successful Login with Valid Credentials" classname="login.spec.js" time="8.295">
+<system-out>
+<![CDATA[Login may have failed - checking page state
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-005: Verify Success Message Contains Username" classname="login.spec.js" time="7.409">
+<system-out>
+<![CDATA[Username "testuser123" found in page content
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-006: Verify Button Text Change from Log In to Log Out" classname="login.spec.js" time="7.604">
+<system-out>
+<![CDATA[Initial button text verified: "Log In"
+Login may not have succeeded - checking for login button
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-007: Multiple Login Attempts with Different Usernames" classname="login.spec.js" time="18.177">
+<system-out>
+<![CDATA[Attempted login with username: user1
+Attempted login with username: user2
+Attempted login with username: user3
+Multiple login attempts completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-008: Login with Special Characters in Username" classname="login.spec.js" time="6.926">
+<system-out>
+<![CDATA[Special characters handled in username field
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-009: Login Error Handling and Recovery" classname="login.spec.js" time="17.059">
+<system-out>
+<![CDATA[Error recovery and second login attempt completed
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-010: Button Functionality After Login" classname="login.spec.js" time="7.396">
+<system-out>
+<![CDATA[Logout button not available - login may have failed
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-011: Page Refresh After Login" classname="login.spec.js" time="8.773">
+<system-out>
+<![CDATA[Page refresh after login completed successfully
+]]>
+</system-out>
+</testcase>
+<testcase name="Scenario B: Login Form Testing › TC-LOGIN-012: Browser Compatibility for Login" classname="login.spec.js" time="7.044">
+<system-out>
+<![CDATA[Testing login compatibility in: firefox
+Login form compatible with firefox browser
+]]>
+</system-out>
+</testcase>
+</testsuite>
+</testsuites>

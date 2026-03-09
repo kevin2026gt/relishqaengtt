@@ -1,0 +1,1601 @@
+{
+  "config": {
+    "configFile": "/workspaces/relishqaengtt/Part 4/playwright.config.js",
+    "rootDir": "/workspaces/relishqaengtt/Part 4/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspaces/relishqaengtt/Part 4/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/workspaces/relishqaengtt/Part 4/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 120000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results/results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results/junit.xml"
+        }
+      ],
+      [
+        "list",
+        null
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "ajax.spec.js",
+      "file": "ajax.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Scenario A: AJAX Data Load Testing",
+          "file": "ajax.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-AJAX-001: Successful AJAX Data Load",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 20907,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Loading indicator present: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:53:04.587Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef54114188240a906cc8-e263bc5768ad2b0f86b0",
+              "file": "ajax.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "TC-AJAX-002: AJAX Data Load with Timeout Verification",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16894,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Actual AJAX load time: 15.04 seconds\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:53:26.354Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef54114188240a906cc8-4eed2f982a129437807d",
+              "file": "ajax.spec.js",
+              "line": 52,
+              "column": 3
+            },
+            {
+              "title": "TC-AJAX-003: Verify Exact Label Text Content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17668,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:53:43.278Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef54114188240a906cc8-41b144b1f4773a5c4eda",
+              "file": "ajax.spec.js",
+              "line": 75,
+              "column": 3
+            },
+            {
+              "title": "TC-AJAX-004: Multiple Sequential Requests",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 21428,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "--- Request 1 of 3 ---\n"
+                        },
+                        {
+                          "text": "Request 1 completed in 15.01 seconds\n"
+                        },
+                        {
+                          "text": "--- Request 2 of 3 ---\n"
+                        },
+                        {
+                          "text": "Request 2 completed in 0.09 seconds\n"
+                        },
+                        {
+                          "text": "--- Request 3 of 3 ---\n"
+                        },
+                        {
+                          "text": "Request 3 completed in 0.00 seconds\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:54:00.986Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef54114188240a906cc8-da2b36f70e93a0b17ef2",
+              "file": "ajax.spec.js",
+              "line": 99,
+              "column": 3
+            },
+            {
+              "title": "TC-AJAX-005: AJAX Response Text Verification",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 16674,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:54:22.474Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "ef54114188240a906cc8-9700c81aa716c68f9f61",
+              "file": "ajax.spec.js",
+              "line": 134,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "dynamic-elements.spec.js",
+      "file": "dynamic-elements.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Scenario C: Dynamic Elements and Overlapped Elements Testing",
+          "file": "dynamic-elements.spec.js",
+          "line": 8,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-DYNAMIC-001: Dynamic Button ID Changes on Reload",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 17032,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    15 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    15 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n\n    at DynamicElementsPage.clickDynamicButton (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:61:18)\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:40:23",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                          "column": 18,
+                          "line": 61
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for button to be ready (not just present, but interactive)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39misEnabled({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m     \n \u001b[90m 64 |\u001b[39m     \u001b[90m// Click the button\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                            "column": 18,
+                            "line": 61
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    15 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for button to be ready (not just present, but interactive)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39misEnabled({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m     \n \u001b[90m 64 |\u001b[39m     \u001b[90m// Click the button\u001b[39m\u001b[0m\n\u001b[2m    at DynamicElementsPage.clickDynamicButton (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:61:18)\u001b[22m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:40:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Button may not have an ID attribute, but element is still accessible\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:54:39.231Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--0f920-Button-ID-Changes-on-Reload-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                        "column": 18,
+                        "line": 61
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-f5701168bf9ba0f85030",
+              "file": "dynamic-elements.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-002: Click Dynamic Button Regardless of ID Changes",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 7283,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    15 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    15 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n\n    at DynamicElementsPage.clickDynamicButton (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:61:18)\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:76:23",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                          "column": 18,
+                          "line": 61
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for button to be ready (not just present, but interactive)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39misEnabled({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m     \n \u001b[90m 64 |\u001b[39m     \u001b[90m// Click the button\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                            "column": 18,
+                            "line": 61
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 5000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    15 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:61\n\n\u001b[0m \u001b[90m 59 |\u001b[39m     \n \u001b[90m 60 |\u001b[39m     \u001b[90m// Wait for button to be ready (not just present, but interactive)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39misEnabled({ timeout\u001b[33m:\u001b[39m \u001b[35m5000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m     \n \u001b[90m 64 |\u001b[39m     \u001b[90m// Click the button\u001b[39m\u001b[0m\n\u001b[2m    at DynamicElementsPage.clickDynamicButton (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:61:18)\u001b[22m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:76:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:54:58.330Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--272b5-on-Regardless-of-ID-Changes-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                        "column": 18,
+                        "line": 61
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-76ada85eb6718f0b8f13",
+              "file": "dynamic-elements.spec.js",
+              "line": 60,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-003: Multiple Reloads and Clicks",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 12217,
+                      "error": {
+                        "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    25 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n",
+                        "stack": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    25 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n\n    at DynamicElementsPage.getDynamicButtonId (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:44:18)\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:94:42",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                          "column": 18,
+                          "line": 44
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \n \u001b[90m 43 |\u001b[39m     \u001b[90m// Wait for button to be visible first\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     \n \u001b[90m 46 |\u001b[39m     \u001b[90m// Get the ID attribute\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m buttonId \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                            "column": 18,
+                            "line": 44
+                          },
+                          "message": "TimeoutError: locator.waitFor: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('button').first() to be visible\u001b[22m\n\u001b[2m    25 × locator resolved to hidden <button type=\"button\" aria-expanded=\"false\" class=\"navbar-toggler\" data-toggle=\"collapse\" aria-label=\"Toggle navigation\" data-target=\"#navbarSupportedContent\" aria-controls=\"navbarSupportedContent\">…</button>\u001b[22m\n\n\n\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:44\n\n\u001b[0m \u001b[90m 42 |\u001b[39m     \n \u001b[90m 43 |\u001b[39m     \u001b[90m// Wait for button to be visible first\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 44 |\u001b[39m     \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mwaitFor({ state\u001b[33m:\u001b[39m \u001b[32m'visible'\u001b[39m\u001b[33m,\u001b[39m timeout\u001b[33m:\u001b[39m \u001b[35m10000\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 45 |\u001b[39m     \n \u001b[90m 46 |\u001b[39m     \u001b[90m// Get the ID attribute\u001b[39m\n \u001b[90m 47 |\u001b[39m     \u001b[36mconst\u001b[39m buttonId \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'id'\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at DynamicElementsPage.getDynamicButtonId (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:44:18)\u001b[22m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:94:42\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "--- Cycle 1 of 3 ---\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:08.641Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--24708-Multiple-Reloads-and-Clicks-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                        "column": 18,
+                        "line": 44
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-92640c6914ade6f7139e",
+              "file": "dynamic-elements.spec.js",
+              "line": 81,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-004: Resilient Selector Without ID Dependency",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 3,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2344,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:129:23",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                          "column": 23,
+                          "line": 129
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 127 |\u001b[39m     \u001b[90m// Assert: Button is found and visible\u001b[39m\n \u001b[90m 128 |\u001b[39m     \u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 129 |\u001b[39m     expect(isVisible)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 130 |\u001b[39m\n \u001b[90m 131 |\u001b[39m     \u001b[90m// Assert: Button has height and width (not just DOM presence)\u001b[39m\n \u001b[90m 132 |\u001b[39m     \u001b[36mconst\u001b[39m boundingBox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                            "column": 23,
+                            "line": 129
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 127 |\u001b[39m     \u001b[90m// Assert: Button is found and visible\u001b[39m\n \u001b[90m 128 |\u001b[39m     \u001b[36mconst\u001b[39m isVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 129 |\u001b[39m     expect(isVisible)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 130 |\u001b[39m\n \u001b[90m 131 |\u001b[39m     \u001b[90m// Assert: Button has height and width (not just DOM presence)\u001b[39m\n \u001b[90m 132 |\u001b[39m     \u001b[36mconst\u001b[39m boundingBox \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m button\u001b[33m.\u001b[39mboundingBox()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:129:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:23.108Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--c8ecf-ector-Without-ID-Dependency-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                        "column": 23,
+                        "line": 129
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-a8fadb429be40f199107",
+              "file": "dynamic-elements.spec.js",
+              "line": 115,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-005: Name Input Field Location and Content",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2289,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:27.881Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-91e62ae29d8baf5fafa5",
+              "file": "dynamic-elements.spec.js",
+              "line": 147,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-006: Enter Text in Overlapped Field",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2249,
+                      "error": {
+                        "message": "Error: Failed to enter name. Expected: \"John Doe\", Got: \"\"",
+                        "stack": "Error: Failed to enter name. Expected: \"John Doe\", Got: \"\"\n    at DynamicElementsPage.enterNameInOverlappedField (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:146:13)\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:190:5",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                          "column": 13,
+                          "line": 146
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:146\n\n\u001b[0m \u001b[90m 144 |\u001b[39m     \u001b[36mconst\u001b[39m enteredValue \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m nameInput\u001b[33m.\u001b[39minputValue()\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m     \u001b[36mif\u001b[39m (enteredValue \u001b[33m!==\u001b[39m name) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 146 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Failed to enter name. Expected: \"${name}\", Got: \"${enteredValue}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 147 |\u001b[39m     }\n \u001b[90m 148 |\u001b[39m   }\n \u001b[90m 149 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                            "column": 13,
+                            "line": 146
+                          },
+                          "message": "Error: Failed to enter name. Expected: \"John Doe\", Got: \"\"\n\n\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:146\n\n\u001b[0m \u001b[90m 144 |\u001b[39m     \u001b[36mconst\u001b[39m enteredValue \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m nameInput\u001b[33m.\u001b[39minputValue()\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m     \u001b[36mif\u001b[39m (enteredValue \u001b[33m!==\u001b[39m name) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 146 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Failed to enter name. Expected: \"${name}\", Got: \"${enteredValue}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 147 |\u001b[39m     }\n \u001b[90m 148 |\u001b[39m   }\n \u001b[90m 149 |\u001b[39m\u001b[0m\n\u001b[2m    at DynamicElementsPage.enterNameInOverlappedField (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:146:13)\u001b[22m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:190:5\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Field visible before input: true\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:30.675Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--f6f11-er-Text-in-Overlapped-Field-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                        "column": 13,
+                        "line": 146
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-778303637232f64dc627",
+              "file": "dynamic-elements.spec.js",
+              "line": 171,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-007: Overlapped Element Visibility Check",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 3084,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Initial visibility: true\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:34.687Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-7ef35e284edb62fd86e0",
+              "file": "dynamic-elements.spec.js",
+              "line": 199,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-008: Forced Click on Hidden/Overlapped Element",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1300,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Force click successfully handled overlapped element\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:38.287Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-51d4cf3e182a415383eb",
+              "file": "dynamic-elements.spec.js",
+              "line": 238,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-009: Clear and Re-enter Name Field Multiple Times",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 1346,
+                      "error": {
+                        "message": "Error: Failed to enter name. Expected: \"Alice\", Got: \"\"",
+                        "stack": "Error: Failed to enter name. Expected: \"Alice\", Got: \"\"\n    at DynamicElementsPage.enterNameInOverlappedField (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:146:13)\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:282:7",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                          "column": 13,
+                          "line": 146
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:146\n\n\u001b[0m \u001b[90m 144 |\u001b[39m     \u001b[36mconst\u001b[39m enteredValue \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m nameInput\u001b[33m.\u001b[39minputValue()\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m     \u001b[36mif\u001b[39m (enteredValue \u001b[33m!==\u001b[39m name) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 146 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Failed to enter name. Expected: \"${name}\", Got: \"${enteredValue}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 147 |\u001b[39m     }\n \u001b[90m 148 |\u001b[39m   }\n \u001b[90m 149 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                            "column": 13,
+                            "line": 146
+                          },
+                          "message": "Error: Failed to enter name. Expected: \"Alice\", Got: \"\"\n\n\u001b[90m   at \u001b[39m../pages/DynamicElementsPage.js:146\n\n\u001b[0m \u001b[90m 144 |\u001b[39m     \u001b[36mconst\u001b[39m enteredValue \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m nameInput\u001b[33m.\u001b[39minputValue()\u001b[33m;\u001b[39m\n \u001b[90m 145 |\u001b[39m     \u001b[36mif\u001b[39m (enteredValue \u001b[33m!==\u001b[39m name) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 146 |\u001b[39m       \u001b[36mthrow\u001b[39m \u001b[36mnew\u001b[39m \u001b[33mError\u001b[39m(\u001b[32m`Failed to enter name. Expected: \"${name}\", Got: \"${enteredValue}\"`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 147 |\u001b[39m     }\n \u001b[90m 148 |\u001b[39m   }\n \u001b[90m 149 |\u001b[39m\u001b[0m\n\u001b[2m    at DynamicElementsPage.enterNameInOverlappedField (/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js:146:13)\u001b[22m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:282:7\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:39.636Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--b5c7d-r-Name-Field-Multiple-Times-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/pages/DynamicElementsPage.js",
+                        "column": 13,
+                        "line": 146
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-ea7d5e830ad7943d3ee1",
+              "file": "dynamic-elements.spec.js",
+              "line": 264,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-010: Focus and Blur Field Interactions",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2427,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"focused text\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"focused text\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:317:19",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                          "column": 19,
+                          "line": 317
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 315 |\u001b[39m     \u001b[90m// Assert: Text was entered while focused\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mconst\u001b[39m value \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m dynamicPage\u001b[33m.\u001b[39mgetNameInputValue()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m     expect(value)\u001b[33m.\u001b[39mtoBe(\u001b[32m'focused text'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m\n \u001b[90m 319 |\u001b[39m     \u001b[90m// Act: Blur the field\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mawait\u001b[39m dynamicPage\u001b[33m.\u001b[39mblurNameField()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                            "column": 19,
+                            "line": 317
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m\"focused text\"\u001b[39m\nReceived: \u001b[31m\"\"\u001b[39m\n\n\u001b[0m \u001b[90m 315 |\u001b[39m     \u001b[90m// Assert: Text was entered while focused\u001b[39m\n \u001b[90m 316 |\u001b[39m     \u001b[36mconst\u001b[39m value \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m dynamicPage\u001b[33m.\u001b[39mgetNameInputValue()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 317 |\u001b[39m     expect(value)\u001b[33m.\u001b[39mtoBe(\u001b[32m'focused text'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 318 |\u001b[39m\n \u001b[90m 319 |\u001b[39m     \u001b[90m// Act: Blur the field\u001b[39m\n \u001b[90m 320 |\u001b[39m     \u001b[36mawait\u001b[39m dynamicPage\u001b[33m.\u001b[39mblurNameField()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:317:19\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Field focused: false\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:43.389Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--f2956-and-Blur-Field-Interactions-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                        "column": 19,
+                        "line": 317
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-63fc5d090589028e129a",
+              "file": "dynamic-elements.spec.js",
+              "line": 294,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-011: Accessibility Tree Includes Name Input",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 2314,
+                      "error": {
+                        "message": "TypeError: Cannot read properties of undefined (reading 'snapshot')",
+                        "stack": "TypeError: Cannot read properties of undefined (reading 'snapshot')\n    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:341:52",
+                        "location": {
+                          "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                          "column": 52,
+                          "line": 341
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 339 |\u001b[39m\n \u001b[90m 340 |\u001b[39m     \u001b[90m// Act: Get accessibility information\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 341 |\u001b[39m     \u001b[36mconst\u001b[39m accessibility \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39maccessibility\u001b[33m.\u001b[39msnapshot()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 342 |\u001b[39m\n \u001b[90m 343 |\u001b[39m     \u001b[90m// Verify page structure (accessibility tree should include input)\u001b[39m\n \u001b[90m 344 |\u001b[39m     expect(accessibility)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                            "column": 52,
+                            "line": 341
+                          },
+                          "message": "TypeError: Cannot read properties of undefined (reading 'snapshot')\n\n\u001b[0m \u001b[90m 339 |\u001b[39m\n \u001b[90m 340 |\u001b[39m     \u001b[90m// Act: Get accessibility information\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 341 |\u001b[39m     \u001b[36mconst\u001b[39m accessibility \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39maccessibility\u001b[33m.\u001b[39msnapshot()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 342 |\u001b[39m\n \u001b[90m 343 |\u001b[39m     \u001b[90m// Verify page structure (accessibility tree should include input)\u001b[39m\n \u001b[90m 344 |\u001b[39m     expect(accessibility)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at /workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js:341:52\u001b[22m"
+                        }
+                      ],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:48.715Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "/workspaces/relishqaengtt/Part 4/test-results/dynamic-elements-Scenario--769b1-ty-Tree-Includes-Name-Input-firefox/error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "/workspaces/relishqaengtt/Part 4/tests/dynamic-elements.spec.js",
+                        "column": 52,
+                        "line": 341
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-de8d4ea3d82549fc748c",
+              "file": "dynamic-elements.spec.js",
+              "line": 333,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-012: Dynamic Page Elements Resilience",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 5181,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Initial button count: 2\n"
+                        },
+                        {
+                          "text": "After reload 1: 2 buttons\n"
+                        },
+                        {
+                          "text": "After reload 2: 2 buttons\n"
+                        },
+                        {
+                          "text": "After reload 3: 2 buttons\n"
+                        },
+                        {
+                          "text": "Dynamic element resilience verified across multiple reloads\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:53.676Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-79a4e168e93d641ffad2",
+              "file": "dynamic-elements.spec.js",
+              "line": 351,
+              "column": 3
+            },
+            {
+              "title": "TC-DYNAMIC-013: Verify Input Type and Attributes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1163,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Input type: text\n"
+                        },
+                        {
+                          "text": "Placeholder: Id\n"
+                        },
+                        {
+                          "text": "Input element attributes verified\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:55:59.410Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c1fdba15d106c4585d33-2fcccedd873a86157e06",
+              "file": "dynamic-elements.spec.js",
+              "line": 378,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "login.spec.js",
+      "file": "login.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Scenario B: Login Form Testing",
+          "file": "login.spec.js",
+          "line": 9,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC-LOGIN-001: Login with Empty Username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8727,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:00.598Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-6a098116b07b26330a41",
+              "file": "login.spec.js",
+              "line": 16,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-002: Login with Empty Password",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 4347,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:09.341Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-fb33098b64a4987550ca",
+              "file": "login.spec.js",
+              "line": 43,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-003: Login with Both Fields Empty",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 2258,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:13.719Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-0bb850ebab8c3d482bd4",
+              "file": "login.spec.js",
+              "line": 64,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-004: Successful Login with Valid Credentials",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8295,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Login may have failed - checking page state\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:16.008Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-34d59a4053545a7b8c87",
+              "file": "login.spec.js",
+              "line": 83,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-005: Verify Success Message Contains Username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7409,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Username \"testuser123\" found in page content\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:24.328Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-d8dd4c10b53577f38500",
+              "file": "login.spec.js",
+              "line": 112,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-006: Verify Button Text Change from Log In to Log Out",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7604,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Initial button text verified: \"Log In\"\n"
+                        },
+                        {
+                          "text": "Login may not have succeeded - checking for login button\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:31.756Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-ff0901ee6d9584f98797",
+              "file": "login.spec.js",
+              "line": 144,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-007: Multiple Login Attempts with Different Usernames",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 18177,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Attempted login with username: user1\n"
+                        },
+                        {
+                          "text": "Attempted login with username: user2\n"
+                        },
+                        {
+                          "text": "Attempted login with username: user3\n"
+                        },
+                        {
+                          "text": "Multiple login attempts completed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:39.387Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-363d45973d0f1b5fdc90",
+              "file": "login.spec.js",
+              "line": 175,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-008: Login with Special Characters in Username",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6926,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Special characters handled in username field\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:56:57.588Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-068c864a06fd889470f7",
+              "file": "login.spec.js",
+              "line": 204,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-009: Login Error Handling and Recovery",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 17059,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Error recovery and second login attempt completed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:57:04.529Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-453a14700f10dd3e3eba",
+              "file": "login.spec.js",
+              "line": 230,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-010: Button Functionality After Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7396,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Logout button not available - login may have failed\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:57:21.603Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-d870cde0190ac6291a9b",
+              "file": "login.spec.js",
+              "line": 261,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-011: Page Refresh After Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 8773,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Page refresh after login completed successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:57:29.011Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-30993240f6e3843e433b",
+              "file": "login.spec.js",
+              "line": 294,
+              "column": 3
+            },
+            {
+              "title": "TC-LOGIN-012: Browser Compatibility for Login",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 120000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 7044,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Testing login compatibility in: firefox\n"
+                        },
+                        {
+                          "text": "Login form compatible with firefox browser\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-03-09T05:57:37.795Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "badc1754af1944f68b2b-8319fff0f684a5897f18",
+              "file": "login.spec.js",
+              "line": 322,
+              "column": 3
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-03-09T05:53:00.775Z",
+    "duration": 284909.154,
+    "expected": 22,
+    "skipped": 0,
+    "unexpected": 8,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,5 @@
+create test automation script for playwright with following conditions:
+- Use a page object model to separate page interaction logic from test logic
+- Use proper waiting strategies no hardcoded sleep() or arbitray timeouts.
+- Use explicit waits tied to conditions
+- Meaningful assertions that verifies actual application state, not just that no errors were thrown.

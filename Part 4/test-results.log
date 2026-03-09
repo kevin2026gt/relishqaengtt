@@ -1,0 +1,9 @@
+
+> qa-automation-playwright@1.0.0 test:login
+> playwright test tests/login.spec.js --reporter=line
+
+
+Running 12 tests using 1 worker
+
+[1A[2K[1/12] [firefox] › tests/login.spec.js:16:3 › Scenario B: Login Form Testing › TC-LOGIN-001: Login with Empty Username
+[1A[2K[2/12] [firefox] › tests/login.spec.js:43:3 › Scenario B: Login Form Testing › TC-LOGIN-002: Login with Empty Password

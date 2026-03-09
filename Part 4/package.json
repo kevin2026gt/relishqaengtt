@@ -1,0 +1,33 @@
+{
+  "name": "qa-automation-playwright",
+  "version": "1.0.0",
+  "description": "Playwright-based QA automation with Page Object Model pattern",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:ajax": "playwright test tests/ajax.spec.js",
+    "test:login": "playwright test tests/login.spec.js",
+    "test:dynamic": "playwright test tests/dynamic-elements.spec.js",
+    "test:all": "playwright test tests/",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen"
+  },
+  "keywords": [
+    "playwright",
+    "automation",
+    "testing",
+    "e2e",
+    "page-object-model"
+  ],
+  "author": "QA Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

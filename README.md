@@ -63,11 +63,11 @@ Se extrajieron fragmentos del documento y se crearon archivos MD para la solucio
 Siguiendo los requisitos para la implementacion de la Automatizacion, yo utilice Playwright ya que es el framework el cual he empezado a utilizar actualmente y recibiendo curso como se los mencione en la entrevista. 
 
 Siempre utilizando copilot segui estos pasos:
-    - Que utilizara este [Que son las condiciones solicitadas](<Part 4/automation_conditions>)
-        - Creara page object model
-        - Propper waiting strategies (esto si no se mucho , a puras penas he utilizado awaits)
-        - Meaningful Assertions
-        - Reslient Selectors (esto si me provoco muchos problemas, tantos que al final lo quite como condicion para la generacion de los scripts por que me generaban muchos errores y pues lo poco que se de selectors no me ayudo mucho que digamos.)
+- Que utilizara este [Que son las condiciones solicitadas](<Part 4/automation_conditions>)
+    - Creara page object model
+    - Propper waiting strategies (esto si no se mucho , a puras penas he utilizado awaits)
+    - Meaningful Assertions
+    - Reslient Selectors (esto si me provoco muchos problemas, tantos que al final lo quite como condicion para la generacion de los scripts por que me generaban muchos errores y pues lo poco que se de selectors no me ayudo mucho que digamos.)
     - Estas son las paginas que se crearon
         - [Escenario A - Ajax](<Part 4/pages/AjaxPage.js>)
         - [Escenario B - Login](<Part 4/pages/LoginPage.js>)

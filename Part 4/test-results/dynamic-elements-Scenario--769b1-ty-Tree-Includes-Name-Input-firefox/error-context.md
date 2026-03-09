@@ -1,0 +1,46 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - link "UITAP" [ref=e3] [cursor=pointer]:
+      - /url: /
+    - list [ref=e5]:
+      - listitem [ref=e6]:
+        - link "Home" [ref=e7] [cursor=pointer]:
+          - /url: /home
+      - listitem [ref=e8]:
+        - link "Resources" [ref=e9] [cursor=pointer]:
+          - /url: /resources
+  - generic [ref=e11]:
+    - heading "Overlapped Element" [level=3] [ref=e12]
+    - paragraph [ref=e13]: Entering text to a partially visible element may require scrolling it into view.
+    - heading "Scenario" [level=4] [ref=e14]
+    - list [ref=e15]:
+      - listitem [ref=e16]: Record setting text into the Name input field (scroll element before entering the text).
+      - listitem [ref=e17]: Then execute your test to make sure that the text was entered correctly.
+    - heading "Playground" [level=4] [ref=e18]
+    - generic [ref=e20]:
+      - textbox "Id" [ref=e21]
+      - textbox "Name" [ref=e22]
+      - textbox "Subject" [ref=e23]
+  - contentinfo [ref=e26]:
+    - generic [ref=e27]:
+      - generic [ref=e30]:
+        - link "Fork the website on GitHub" [ref=e31] [cursor=pointer]:
+          - /url: https://github.com/inflectra/ui-test-automation-playground
+        - text: .
+      - generic [ref=e32]:
+        - text: Supported by
+        - link "Rapise" [ref=e33] [cursor=pointer]:
+          - /url: https://www.inflectra.com/Rapise/
+        - text: test automation team. Copyright © 2020 - 2026
+        - link "Inflectra Corporation" [ref=e34] [cursor=pointer]:
+          - /url: https://www.inflectra.com/
+        - text: .
+    - generic [ref=e35]:
+      - text: This work is licensed under the
+      - link "Apache License 2.0" [ref=e36] [cursor=pointer]:
+        - /url: https://www.apache.org/licenses/LICENSE-2.0
+      - text: .
+```

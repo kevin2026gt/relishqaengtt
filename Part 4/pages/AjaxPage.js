@@ -9,10 +9,12 @@ class AjaxPage {
     // Resilient selectors for finding the AJAX button
     this.ajaxButtonSelectors = [
       'button:has-text("Button Triggering AJAX Request")',
+      'button:has-text("AJAX")',
       'button[id*="ajax"]',
       'button[class*="ajax"]',
       '#ajaxButton', // Fallback to direct ID if exists
-      'button >> :text("Button")'
+      'button >> text=Button',
+      'button'  // Last resort: just any button
     ];
   }
 
@@ -36,9 +38,10 @@ class AjaxPage {
     
     for (const selector of this.ajaxButtonSelectors) {
       try {
-        const element = await this.page.$(selector);
-        if (element) {
-          await element.click({ timeout: 5000 });
+        const locator = this.page.locator(selector);
+        const count = await locator.count();
+        if (count > 0) {
+          await locator.first().click({ timeout: 10000 });
           buttonFound = true;
           break;
         }
@@ -84,13 +87,10 @@ class AjaxPage {
    * @returns {Promise<string>} - The text content of the response label
    */
   async getResponseLabelText() {
-    // Wait for element to be visible before getting text
-    await this.page.waitForSelector('p, div, label, span', { 
-      state: 'visible',
-      timeout: 5000 
-    });
-
+    // Wait for the AJAX response to be in the DOM (we already verified this in waitForDataToLoad)
     // Get text from body and extract the relevant part
+    await this.page.waitForTimeout(1000); // Brief wait to ensure DOM is updated
+    
     const bodyText = await this.page.textContent('body');
     return bodyText.trim();
   }

@@ -39,6 +39,11 @@ class DynamicElementsPage {
   async getDynamicButtonId() {
     // Use button locator that doesn't depend on ID
     const button = this.page.locator('button').first();
+    
+    // Wait for button to be visible first
+    await button.waitFor({ state: 'visible', timeout: 10000 });
+    
+    // Get the ID attribute
     const buttonId = await button.getAttribute('id');
     return buttonId;
   }

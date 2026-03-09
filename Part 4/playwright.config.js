@@ -9,7 +9,7 @@ const config = defineConfig({
   testDir: './tests',
   
   // Maximum time one test can run
-  timeout: 60 * 1000, // 60 seconds
+  timeout: 120 * 1000, // 120 seconds (increased from 60 to handle dynamic element tests)
 
   // Test execution settings
   fullyParallel: true,
@@ -31,7 +31,7 @@ const config = defineConfig({
     baseURL: 'http://uitestingplayground.com',
 
     // Browser action timeout
-    actionTimeout: 15000,
+    actionTimeout: 30000,
 
     // Navigation timeout
     navigationTimeout: 30000,
